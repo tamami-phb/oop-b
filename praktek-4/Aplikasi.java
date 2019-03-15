@@ -25,6 +25,22 @@ public class Aplikasi {
         d2.setNama("shizuka");
         d1.cetak();
         d2.cetak();
+
+        System.out.println("\nexperiment");
+        Personal personal = new Personal("1984001", "tamami");
+        Personal p1 = new Personal("1988001", "honda");
+        Personal p2 = new Personal("1988001", "honda");
+        System.out.println(personal);
+        System.out.println(personal.getNama() + " : " +
+                personal.hashCode());
+        System.out.println(p1.getNama() + " : " +
+                p1.hashCode());
+        System.out.println(p2.getNama() + " : " +
+                p2.hashCode());
+
+        System.out.println();
+        System.out.println(new Personal("1988001", "honda").hashCode());
+        System.out.println(new Personal("1988001", "honda").hashCode());
     }
 
 }

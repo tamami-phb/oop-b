@@ -14,9 +14,14 @@ public class Personal {
         System.out.println(nik + " : " + nama);
     }
 
+    public String toString() {
+        return nik + " : " + nama;
+    }
+
     public String getNik() {
         return nik;
     }
+
 
     public void setNik(String nik) {
         this.nik = nik;
