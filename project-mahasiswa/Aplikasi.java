@@ -14,7 +14,12 @@ public class Aplikasi {
         do {
             cetakMenu();
             scanner = new Scanner(System.in);
-            opsi = scanner.nextInt();
+            try {
+                opsi = scanner.nextInt();
+            } catch(Exception e) {
+                System.err.println("Tolong di cek inputnya mas/mba");
+                opsi = 0;
+            }
             prosesMenu(opsi);
         } while(opsi != 5);
     }

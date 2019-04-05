@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f30ac42-e2ca-4f70-b31e-5579f2bfbf1f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/project-mahasiswa/Aplikasi.class" beforeDir="false" afterPath="$PROJECT_DIR$/project-mahasiswa/Aplikasi.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-mahasiswa/Aplikasi.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-mahasiswa/Aplikasi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-mahasiswa/service/ServiceMahasiswa.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-mahasiswa/service/ServiceMahasiswa.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project-mahasiswa/service/ServiceMahasiswa.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
-              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+              <caret line="24" column="14" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,15 +50,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project-mahasiswa/Aplikasi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+            <state relative-caret-position="177">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1292#1293#0" expanded="true" />
-                <element signature="e#1331#1332#0" expanded="true" />
+                <element signature="e#2258#2259#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,8 +86,8 @@
         <option value="$PROJECT_DIR$/praktek-6/Aplikasi.java" />
         <option value="$PROJECT_DIR$/praktek-7/Aplikasi.java" />
         <option value="$PROJECT_DIR$/project-mahasiswa/entity/Mahasiswa.java" />
-        <option value="$PROJECT_DIR$/project-mahasiswa/Aplikasi.java" />
         <option value="$PROJECT_DIR$/project-mahasiswa/service/ServiceMahasiswa.java" />
+        <option value="$PROJECT_DIR$/project-mahasiswa/Aplikasi.java" />
       </list>
     </option>
   </component>
@@ -144,7 +141,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554457011042" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554457922333" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -465,24 +462,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project-mahasiswa/Aplikasi.java">
+    <entry file="file://$PROJECT_DIR$/project-mahasiswa/service/ServiceMahasiswa.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+        <state relative-caret-position="336">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-            <element signature="e#1331#1332#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project-mahasiswa/service/ServiceMahasiswa.java">
+    <entry file="file://$PROJECT_DIR$/project-mahasiswa/Aplikasi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        <state relative-caret-position="177">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2258#2259#0" expanded="true" />
           </folding>
         </state>
       </provider>
