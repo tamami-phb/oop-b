@@ -21,7 +21,13 @@ public class ServiceMahasiswa {
     }
 
     public void hapusData(String nim) {
-
+        int idx = data.indexOf(new Mahasiswa(nim, "", ""));
+        if(idx >= 0) {
+            data.remove(idx);
+            System.out.println("Data telah terhapus");
+        } else {
+            System.out.println("Datanya memang tidak ada");
+        }
     }
 
     public void cetakData() {

@@ -28,11 +28,20 @@ public class Aplikasi {
                 formUbahData();
                 break;
             case 3:
+                formHapusData();
                 break;
             case 4:
                 service.cetakData();
                 break;
         }
+    }
+
+    private static void formHapusData() {
+        System.out.println("\nForm Hapus Data");
+        scanner = new Scanner(System.in);
+        System.out.print("NIM : ");
+        String nim = scanner.nextLine();
+        service.hapusData(nim);
     }
 
     private static void formUbahData() {
@@ -73,7 +82,7 @@ public class Aplikasi {
         System.out.println("4. tampilkan data");
         System.out.println("5. KELUAR");
         System.out.println("-------------");
-        System.out.print("Pilihan > ");
+        System.out.print  ("Pilihan > ");
     }
 
 }
