@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f30ac42-e2ca-4f70-b31e-5579f2bfbf1f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/praktek-5-gui/ui/MainUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/praktek-5-gui/ui/MainUI.java" afterDir="false" />
-    </list>
+    <list default="true" id="3f30ac42-e2ca-4f70-b31e-5579f2bfbf1f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/praktek-5-gui/ui/MainUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="253">
+              <caret line="54" column="47" lean-forward="true" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#71#72#0" expanded="true" />
@@ -93,13 +91,7 @@
             <path>
               <item name="oop-b" type="b2602c69:ProjectViewProjectNode" />
               <item name="oop-b" type="462c0819:PsiDirectoryNode" />
-              <item name="praktek-5-gui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oop-b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oop-b" type="462c0819:PsiDirectoryNode" />
-              <item name="praktek-5-gui" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="praktek-9-audio" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -111,7 +103,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555062045990" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555062281204" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -180,7 +172,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="23" width="800" height="577" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49896908" visible="true" weight="0.23614776" />
       <window_info id="Structure" order="1" sideWeight="0.5010309" side_tool="true" weight="0.3298153" />
@@ -449,8 +440,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/praktek-5-gui/ui/MainUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="253">
+          <caret line="54" column="47" lean-forward="true" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#71#72#0" expanded="true" />
