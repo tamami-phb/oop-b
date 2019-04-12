@@ -2,6 +2,7 @@ package ui;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
 
 public class MainUI extends JFrame {
 
@@ -27,6 +28,7 @@ public class MainUI extends JFrame {
         txtNama = new JTextField();
         txtKelas = new JTextField();
         btnProses = new JButton("Proses");
+        btnProses.addActionListener(new BtnProsesClick());
 
         contentPane = getContentPane();
 
@@ -43,6 +45,16 @@ public class MainUI extends JFrame {
         setTitle("Aplikasi Entry Data");
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+
+
+    private class BtnProsesClick implements ActionListener {
+        public void actionPerformed(ActionEvent evt) {
+            JOptionPane.showMessageDialog(null,
+                    txtNim.getText() + " : " +
+                    txtNama.getText() + " : " +
+                    txtKelas.getText());
+        }
     }
 
 }
