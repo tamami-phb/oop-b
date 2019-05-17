@@ -23,10 +23,12 @@ public class MainUI extends JFrame {
     private Vector data;
     private Vector columnNames;
     public static TambahUI tambahUI;
+    public static EditUI editUI;
 
     public MainUI() {
         koneksi = new Koneksi();
         tambahUI = new TambahUI(this);
+        editUI = new EditUI(this);
         initUI();
         initData();
     }
@@ -83,11 +85,36 @@ public class MainUI extends JFrame {
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        table.setSelectionModel(new MyCustomSingleSelection());
         btnTambah.addActionListener(new BtnTambahClick());
+        btnUbah.addActionListener(new BtnUbahClick());
     }
 
 
+
+    private class MyCustomSingleSelection
+            extends DefaultListSelectionModel {
+        public MyCustomSingleSelection() {
+            setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        }
+    }
+
     // ------- events
+
+    private class BtnUbahClick implements ActionListener {
+        public void actionPerformed(ActionEvent evt) {
+            if(table.getSelectedRow() == -1) {
+                JOptionPane.showMessageDialog(null,
+                        "Pilih dulu data yang akan diubah");
+            } else {
+                String nim, nama, kelas;
+                nim = "" + table.getValueAt(table.getSelectedRow(), 0);
+                nama = table.getValueAt(table.getSelectedRow(), 1).toString();
+                kelas = (String) table.getValueAt(table.getSelectedRow(), 2);
+                editUI.tampilkanForm(nim, nama, kelas);
+            }
+        }
+    }
 
     private class BtnTambahClick implements ActionListener {
         public void actionPerformed(ActionEvent evt) {
