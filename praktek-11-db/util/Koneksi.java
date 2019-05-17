@@ -29,6 +29,7 @@ public class Koneksi {
         return result;
     }
 
+    // INSERT, UPDATE, DELETE
     public int update(String query) throws SQLException {
         openConnection();
         int result = statement.executeUpdate(query);

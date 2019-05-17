@@ -22,9 +22,11 @@ public class MainUI extends JFrame {
     private DefaultTableModel tableModel;
     private Vector data;
     private Vector columnNames;
+    public static TambahUI tambahUI;
 
     public MainUI() {
         koneksi = new Koneksi();
+        tambahUI = new TambahUI(this);
         initUI();
         initData();
     }
@@ -46,6 +48,10 @@ public class MainUI extends JFrame {
             JOptionPane.showMessageDialog(null,
                     "Ada kesalahan query");
         }
+    }
+
+    public void refreshTable() {
+        initData();
     }
 
     private void initUI() {
@@ -76,6 +82,17 @@ public class MainUI extends JFrame {
         pack();
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        btnTambah.addActionListener(new BtnTambahClick());
+    }
+
+
+    // ------- events
+
+    private class BtnTambahClick implements ActionListener {
+        public void actionPerformed(ActionEvent evt) {
+            tambahUI.setVisible(true);
+        }
     }
 
 }
