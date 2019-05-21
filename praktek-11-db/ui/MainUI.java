@@ -88,6 +88,7 @@ public class MainUI extends JFrame {
         table.setSelectionModel(new MyCustomSingleSelection());
         btnTambah.addActionListener(new BtnTambahClick());
         btnUbah.addActionListener(new BtnUbahClick());
+        btnHapus.addActionListener(new BtnHapusClick());
     }
 
 
@@ -100,6 +101,30 @@ public class MainUI extends JFrame {
     }
 
     // ------- events
+
+    private class BtnHapusClick implements ActionListener {
+        public void actionPerformed(ActionEvent evt) {
+            if(table.getSelectedRow() == -1) {
+                JOptionPane.showMessageDialog(null,
+                        "Pilih dulu data yang akan dihapus");
+            } else {
+                String nim = "" + table.getValueAt(
+                        table.getSelectedRow(), 0
+                );
+                String query = "delete from mahasiswa " +
+                        "where nim='" + nim + "'";
+                try {
+                    koneksi.update(query);
+                    JOptionPane.showMessageDialog(null,
+                            "Data dengan NIM " + nim + " telah terhapus");
+                    refreshTable();
+                } catch(SQLException e) {
+                    JOptionPane.showMessageDialog(null,
+                            "Error query, data tidak terhapus");
+                }
+            }
+        }
+    }
 
     private class BtnUbahClick implements ActionListener {
         public void actionPerformed(ActionEvent evt) {

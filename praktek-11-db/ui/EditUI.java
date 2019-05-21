@@ -53,6 +53,8 @@ public class EditUI extends JFrame {
 
         pack();
 
+        txtNim.setEditable(false);
+
         btnBatal.addActionListener(new BtnBatalClick());
         btnSimpan.addActionListener(new BtnSimpanClick());
     }
@@ -71,7 +73,24 @@ public class EditUI extends JFrame {
 
     private class BtnSimpanClick implements ActionListener {
         public void actionPerformed(ActionEvent evt) {
-
+            String nim, nama, kelas;
+            nim = txtNim.getText();
+            nama = txtNama.getText();
+            kelas = txtKelas.getText();
+            String query = "update mahasiswa set " +
+                    "nama='" + nama + "', " +
+                    "kelas='" + kelas + "' " +
+                    "where nim='" + nim + "'";
+            try {
+                MainUI.koneksi.update(query);
+                JOptionPane.showMessageDialog(null,
+                        "Data telah tersimpan");
+                setVisible(false);
+                parent.refreshTable();
+            } catch(SQLException e) {
+                JOptionPane.showMessageDialog(null,
+                        "Kesalahan Query, data gagal disimpan");
+            }
         }
     }
 
